@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="fr" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO Meta Tags -->
+    <title>Inovexia | Agence Développement Web & SaaS MVP en Afrique de l'Ouest</title>
+    <meta name="description" content="Inovexia conçoit des produits SaaS premium et des MVP scalables pour les startups africaines. Développement React, Next.js, mentorat tech 1:1 et intégration paiements mobiles (Orange Money, Wave, MTN)." />
+    <meta name="keywords" content="développement web afrique, saas mvp, react next.js, senegal cote d'ivoire ghana, mentorat tech, mobile money, orange money, wave, startup afrique, inovexia, abidjan dakar" />
+    <meta name="author" content="Inovexia" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://inovexia.com" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://inovexia.com" />
+    <meta property="og:title" content="Inovexia | Agence Développement SaaS & Mentorat Tech en Afrique" />
+    <meta property="og:description" content="Transformez votre idée en produit SaaS rentable en 30 jours. Expertise React, Next.js, IA générative et mentorat technique d'élite." />
+    <meta property="og:image" content="https://inovexia.com/og-image.jpg" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://inovexia.com" />
+    <meta property="twitter:title" content="Inovexia | MVP SaaS & Mentorat Tech Afrique" />
+    <meta property="twitter:description" content="Agence de développement SaaS et mentorat technique pour startups africaines. MVP en 30 jours, intégration Mobile Money." />
+    <meta property="twitter:image" content="https://inovexia.com/twitter-image.jpg" />
+    
+    <!-- Geo Tags -->
+    <meta name="geo.region" content="CI" />
+    <meta name="geo.placename" content="Abidjan" />
+    <meta name="geo.position" content="5.316667;-4.033333" />
+    
+    <title>Inovexia | Développement SaaS & MVP en Afrique</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Iconify Script -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                fontFamily: {
+                    sans: ['Inter', 'sans-serif'],
+                },
+                extend: {
+                    colors: {
+                        dark: '#050505',
+                        card: '#0A0A0A',
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.8s ease-out forwards',
+                        'slide-up': 'slideUp 0.8s ease-out forwards',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        slideUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom Styles -->
+    <style>
+        /* Custom scrollbar for webkit */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background-color: #cbd5e1;
+            border-radius: 20px;
+        }
+        .dark ::-webkit-scrollbar-thumb {
+            background-color: #333;
+        }
+        
+        /* Loader Animation */
+        #loader {
+            transition: opacity 0.6s ease-out, visibility 0.6s;
+        }
+        
+        /* Utility for grid backgrounds */
+        .bg-grid {
+            background-size: 40px 40px;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+        }
+        .dark .bg-grid {
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+        }
+
+        /* Hide number input arrows */
+        input[type=number]::-webkit-inner-spin-button, 
+        input[type=number]::-webkit-outer-spin-button { 
+            -webkit-appearance: none; 
+            margin: 0; 
+        }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
