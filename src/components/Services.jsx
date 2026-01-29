@@ -1,3 +1,5 @@
+import ScrollAnimation from './ScrollAnimation';
+
 const Services = () => {
   const services = [
     {
@@ -25,18 +27,20 @@ const Services = () => {
   return (
     <section id="services" className="py-24 px-6 border-t border-slate-200 dark:border-white/5 bg-white dark:bg-dark">
       <div className="max-w-6xl mx-auto">
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
-          <div>
-            <h2 className="text-4xl font-medium tracking-tight text-slate-900 dark:text-white mb-4">Nos Piliers de Transformation Digitale</h2>
-            <p className="text-slate-600 dark:text-slate-400 max-w-md">Une expertise technique de pointe conçue pour scaler dès le premier jour.</p>
+        <ScrollAnimation animateIn="fadeInUp">
+          <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+            <div>
+              <h2 className="text-4xl font-medium tracking-tight text-slate-900 dark:text-white mb-4">Nos Piliers de Transformation Digitale</h2>
+              <p className="text-slate-600 dark:text-slate-400 max-w-md">Une expertise technique de pointe conçue pour scaler dès le premier jour.</p>
+            </div>
+            <div className="hidden md:block h-px flex-1 bg-slate-200 dark:bg-slate-800 ml-12 mb-2"></div>
           </div>
-          <div className="hidden md:block h-px flex-1 bg-slate-200 dark:bg-slate-800 ml-12 mb-2"></div>
-        </div>
+        </ScrollAnimation>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 relative z-10">
           {services.map((service, index) => (
-            <div 
-              key={index}
+            <ScrollAnimation key={index} animateIn="fadeInUp">
+              <div 
               className={`flex flex-col py-10 relative group ${
                 index % 2 === 0 ? 'lg:border-r' : ''
               } ${
@@ -66,6 +70,7 @@ const Services = () => {
                 {service.description}
               </p>
             </div>
+            </ScrollAnimation>
           ))}
         </div>
       </div>

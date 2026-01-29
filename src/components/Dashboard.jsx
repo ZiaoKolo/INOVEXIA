@@ -1,3 +1,5 @@
+import ContainerScroll from './ContainerScroll';
+
 const Dashboard = () => {
   // KPI Cards Data
   const kpiCards = [
@@ -18,12 +20,6 @@ const Dashboard = () => {
       description: "Pourcentage de clients satisfaits (moyenne).",
       value: "98%",
       icon: "solar:star-linear"
-    },
-    {
-      title: "Chiffre d'Affaires",
-      description: "Revenu total généré ce mois.",
-      value: "8,750,000 FCFA",
-      icon: "solar:dollar-linear"
     }
   ];
 
@@ -34,39 +30,52 @@ const Dashboard = () => {
   ];
 
   return (
-    <section className="py-10 md:py-20 px-4 md:px-6 bg-slate-50 dark:bg-dark min-h-screen">
-      <div className="max-w-7xl mx-auto">
-        {/* Main Container */}
-        <div className="flex flex-col lg:flex-row gap-4 md:gap-6 rounded-2xl md:rounded-[32px] overflow-hidden bg-white dark:bg-dark/80 border border-slate-200 dark:border-slate-800 shadow-xl" style={{ borderBottom: 'none' }}>
-          
-          {/* Sidebar */}
-          <div className="w-full lg:w-64 bg-slate-100 dark:bg-dark/50 p-4 md:p-6 border-b lg:border-b-0 lg:border-r border-slate-200 dark:border-slate-700">
-            <div className="flex items-center gap-2 mb-8">
-              <iconify-icon icon="solar:infinity-linear" width="28" className="text-slate-900 dark:text-white"></iconify-icon>
-              <h2 className="text-lg font-bold text-slate-900 dark:text-white">INOVEXIA</h2>
-            </div>
-            
-            <nav className="space-y-2 md:space-y-4 grid grid-cols-3 lg:grid-cols-1 gap-2">
-              {menuItems.map((item, idx) => (
-                <div
-                  key={idx}
-                  className={`flex items-center gap-2 md:gap-3 px-3 md:px-4 py-2 md:py-3 rounded-lg cursor-pointer transition-colors ${
-                    idx === 0
-                      ? "bg-white dark:bg-dark text-slate-900 dark:text-white"
-                      : "text-slate-600 dark:text-slate-400 hover:bg-white/50 dark:hover:bg-dark/30"
-                  }`}
-                >
-                  <iconify-icon icon={item.icon} width="20"></iconify-icon>
-                  <span className="text-xs md:text-sm font-medium hidden md:inline">{item.label}</span>
-                </div>
-              ))}
-            </nav>
+    <section className="bg-slate-50 dark:bg-dark">
+      <ContainerScroll
+        heightClass="h-[60rem] md:h-[80rem]"
+        titleComponent={
+          <div className="text-center mb-8">
+            <h2 className="text-3xl md:text-5xl font-bold text-slate-900 dark:text-white mb-4">
+              Tableau de Bord de Performance
+            </h2>
+            <p className="text-lg text-slate-600 dark:text-slate-400">
+              Visualisez vos métriques en temps réel
+            </p>
           </div>
+        }
+      >
+        <div className="max-w-7xl mx-auto">
+          {/* Main Container */}
+          <div className="flex flex-col lg:flex-row gap-4 md:gap-6 rounded-2xl md:rounded-[32px] overflow-hidden bg-white dark:bg-dark/80 border border-slate-200 dark:border-slate-800 shadow-xl" style={{ borderBottom: 'none' }}>
+            
+            {/* Sidebar */}
+            <div className="w-full lg:w-64 bg-slate-100 dark:bg-dark/50 p-4 md:p-6 border-b lg:border-b-0 lg:border-r border-slate-200 dark:border-slate-700">
+              <div className="flex items-center gap-2 mb-8">
+                <iconify-icon icon="solar:infinity-linear" width="28" className="text-slate-900 dark:text-white"></iconify-icon>
+                <h2 className="text-lg font-bold text-slate-900 dark:text-white">TRANSEIA</h2>
+              </div>
+              
+              <nav className="space-y-2 md:space-y-4 grid grid-cols-3 lg:grid-cols-1 gap-2">
+                {menuItems.map((item, idx) => (
+                  <div
+                    key={idx}
+                    className={`flex items-center gap-2 md:gap-3 px-3 md:px-4 py-2 md:py-3 rounded-lg cursor-pointer transition-colors ${
+                      idx === 0
+                        ? "bg-white dark:bg-dark text-slate-900 dark:text-white"
+                        : "text-slate-600 dark:text-slate-400 hover:bg-white/50 dark:hover:bg-dark/30"
+                    }`}
+                  >
+                    <iconify-icon icon={item.icon} width="20"></iconify-icon>
+                    <span className="text-xs md:text-sm font-medium hidden md:inline">{item.label}</span>
+                  </div>
+                ))}
+              </nav>
+            </div>
 
-          {/* Main Content */}
-          <div className="flex-1 p-4 md:p-6 lg:p-10">
-            {/* Header */}
-            <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 mb-6 md:mb-8">
+            {/* Main Content */}
+            <div className="flex-1 p-4 md:p-6 lg:p-10">
+              {/* Header */}
+              <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 mb-6 md:mb-8">
               <h1 className="text-2xl md:text-3xl font-bold text-slate-900 dark:text-white">Tableau de Bord</h1>
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 w-full md:w-auto">
                 <div className="relative w-full sm:w-auto">
@@ -84,7 +93,7 @@ const Dashboard = () => {
             </div>
 
             {/* KPI Cards Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4 mb-6 md:mb-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4 mb-6 md:mb-8">
             {kpiCards.map((card, idx) => (
               <div
                 key={idx}
@@ -228,8 +237,9 @@ const Dashboard = () => {
               </div>
             </div>
           </div>
+          </div>
         </div>
-      </div>
+      </ContainerScroll>
     </section>
   );
 };

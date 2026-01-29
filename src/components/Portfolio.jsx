@@ -1,4 +1,5 @@
 import ProjectCard from './ProjectCard';
+import ScrollAnimation from './ScrollAnimation';
 
 const projectsData = [
   {
@@ -25,7 +26,7 @@ const projectsData = [
       'Design moderne et accessible'
     ],
     description: 'Solution mobile complète pour la gestion de maquis avec suivi du stock et analyse des ventes.',
-    fullDescription: 'Inovexia a conçu une application Android professionnelle pour moderniser la gestion des maquis et restaurants locaux. Cette solution hors ligne permet une gestion complète du stock, des ventes et offre des statistiques détaillées sans nécessiter de connexion Internet.',
+    fullDescription: 'TRANSEIA a conçu une application Android professionnelle pour moderniser la gestion des maquis et restaurants locaux. Cette solution hors ligne permet une gestion complète du stock, des ventes et offre des statistiques détaillées sans nécessiter de connexion Internet.',
     challenge: 'Notre client avait besoin d\'une solution fiable fonctionnant sans connexion Internet, avec une interface simple pour des utilisateurs variés tout en garantissant la fiabilité des données.',
     solution: 'Nous avons développé une architecture MVVM robuste avec Room Database, garantissant des performances optimales et une expérience utilisateur fluide grâce à Material Design.',
     role: 'Vision Studio',
@@ -57,10 +58,10 @@ const projectsData = [
       'Performance et SEO optimisés'
     ],
     description: 'Plateforme web intelligente pour découvrir des recettes basées sur les ingrédients disponibles.',
-    fullDescription: 'Inovexia a créé un assistant culinaire innovant combinant intelligence artificielle et design moderne. La plateforme aide les utilisateurs à transformer leurs ingrédients en délicieux plats tout en valorisant la richesse gastronomique africaine.',
+    fullDescription: 'TRANSEIA a créé un assistant culinaire innovant combinant intelligence artificielle et design moderne. La plateforme aide les utilisateurs à transformer leurs ingrédients en délicieux plats tout en valorisant la richesse gastronomique africaine.',
     challenge: 'Créer une expérience utilisateur exceptionnelle qui rende la recherche de recettes naturelle et personnalisée, tout en mettant en avant la diversité culinaire mondiale.',
     solution: 'Nous avons intégré l\'IA Gemini avec l\'API TheMealDB dans une interface Next.js performante, offrant des suggestions intelligentes et une expérience utilisateur fluide.',
-    role: 'Inovexia',
+    role: 'TRANSEIA',
     responsibilities: 'Conception UX/UI, intégration IA générative, développement full-stack, optimisation SEO',
     timeline: 'Décembre 2025',
     duration: 'Livré - Version beta déployée'
@@ -89,10 +90,10 @@ const projectsData = [
       'Authentification sécurisée'
     ],
     description: 'Solution e-commerce complète pour la vente de fournitures scolaires avec gestion avancée.',
-    fullDescription: 'Inovexia a développé une plateforme e-commerce moderne dédiée aux fournitures scolaires, combinant une API Django robuste avec une interface React fluide pour une expérience d\'achat optimale.',
+    fullDescription: 'TRANSEIA a développé une plateforme e-commerce moderne dédiée aux fournitures scolaires, combinant une API Django robuste avec une interface React fluide pour une expérience d\'achat optimale.',
     challenge: 'Concevoir une architecture scalable séparant frontend et backend, avec une gestion sécurisée des transactions et un système de gestion de catalogue flexible.',
     solution: 'Architecture moderne avec Django REST Framework pour le backend et React pour le frontend, garantissant sécurité, performance et évolutivité.',
-    role: 'Inovexia',
+    role: 'TRANSEIA',
     responsibilities: 'Architecture système full-stack, développement backend/frontend, intégration paiements, déploiement',
     timeline: 'Développé en 2025',
     duration: 'Projet livré et en production'
@@ -120,10 +121,10 @@ const projectsData = [
       'Intégration IA native Chrome'
     ],
     description: 'Extension Chrome innovante utilisant l\'IA pour améliorer la concentration et la productivité.',
-    fullDescription: 'Inovexia a conçu une extension Chrome intelligente qui révolutionne la gestion de la concentration. En analysant le contenu web en temps réel, elle aide les utilisateurs à rester focusés sur leurs objectifs.',
+    fullDescription: 'TRANSEIA a conçu une extension Chrome intelligente qui révolutionne la gestion de la concentration. En analysant le contenu web en temps réel, elle aide les utilisateurs à rester focusés sur leurs objectifs.',
     challenge: 'Développer une solution intelligente qui comprend le contexte réel de l\'utilisateur et offre des rappels personnalisés sans être intrusive, là où les bloqueurs traditionnels échouent.',
     solution: 'Utilisation des APIs d\'IA natives de Chrome pour une analyse sémantique en temps réel et des alertes contextuelles, le tout dans une interface élégante et non-intrusive.',
-    role: 'Inovexia',
+    role: 'TRANSEIA',
     responsibilities: 'Conception produit, intégration APIs IA, développement extension Chrome, design UX/UI',
     timeline: 'Projet en cours',
     duration: 'Développement actif - Beta testing'
@@ -134,21 +135,25 @@ const Portfolio = () => {
   return (
     <section id="portfolio" className="py-24 px-6 border-t border-slate-200 dark:border-white/5 bg-white dark:bg-dark">
       <div className="max-w-7xl mx-auto">
-        <div className="mb-12">
-          <h2 className="text-3xl font-medium tracking-tight text-slate-900 dark:text-white mb-4">
-            Des Réussites Tangibles en Afrique
-          </h2>
-          <p className="text-slate-600 dark:text-slate-400">
-            Découvrez comment nos solutions impactent l'économie réelle.
-          </p>
-        </div>
+        <ScrollAnimation animateIn="fadeInUp">
+          <div className="mb-12">
+            <h2 className="text-3xl font-medium tracking-tight text-slate-900 dark:text-white mb-4">
+              Des Réussites Tangibles en Afrique
+            </h2>
+            <p className="text-slate-600 dark:text-slate-400">
+              Découvrez comment nos solutions impactent l'économie réelle.
+            </p>
+          </div>
+        </ScrollAnimation>
 
         {/* Grid Layout */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto">
           {projectsData.map((project) => (
-            <div key={project.id} className="animate-fade-in">
-              <ProjectCard project={project} />
-            </div>
+            <ScrollAnimation key={project.id} animateIn="fadeInUp">
+              <div className="animate-fade-in">
+                <ProjectCard project={project} />
+              </div>
+            </ScrollAnimation>
           ))}
         </div>
       </div>

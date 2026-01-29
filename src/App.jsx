@@ -14,6 +14,11 @@ import Footer from './components/Footer';
 import Blog from './components/Blog';
 import BlogPost from './components/BlogPost';
 import About from './components/About';
+import Privacy from './components/Privacy';
+import Terms from './components/Terms';
+import CookiePolicy from './components/CookiePolicy';
+import NotFound from './components/NotFound';
+import SmoothScrollProvider from './components/SmoothScrollProvider';
 
 function HomePage({ darkMode, toggleDarkMode }) {
   return (
@@ -66,9 +71,10 @@ function App() {
 
   return (
     <Router>
-      <div className="bg-slate-50 text-slate-900 dark:bg-dark dark:text-slate-100 transition-colors duration-300 antialiased">
-        <Loader isLoading={isLoading} />
-        <Routes>
+      <SmoothScrollProvider options={{ duration: 1.2, lerp: 0.08 }}>
+        <div className="bg-slate-50 text-slate-900 dark:bg-dark dark:text-slate-100 transition-colors duration-300 antialiased">
+          <Loader isLoading={isLoading} />
+          <Routes>
           <Route path="/" element={<HomePage darkMode={darkMode} toggleDarkMode={toggleDarkMode} />} />
           <Route path="/blog" element={
             <>
@@ -91,8 +97,31 @@ function App() {
               <Footer />
             </>
           } />
+          <Route path="/privacy" element={
+            <>
+              <Navigation darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+              <Privacy />
+              <Footer />
+            </>
+          } />
+          <Route path="/terms" element={
+            <>
+              <Navigation darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+              <Terms />
+              <Footer />
+            </>
+          } />
+          <Route path="/cookies" element={
+            <>
+              <Navigation darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+              <CookiePolicy />
+              <Footer />
+            </>
+          } />
+          <Route path="*" element={<NotFound />} />
         </Routes>
-      </div>
+        </div>
+      </SmoothScrollProvider>
     </Router>
   );
 }

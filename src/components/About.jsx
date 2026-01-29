@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Target, Users, Award, Zap, Globe, Heart, Shield, TrendingUp, Rocket, User, Image, Plus, Check } from 'lucide-react';
 import { HiMiniCheckBadge } from "react-icons/hi2";
 import emailjs from '@emailjs/browser';
+import ScrollAnimation from './ScrollAnimation';
 
 const About = () => {
   const [newsletterEmail, setNewsletterEmail] = useState('');
@@ -33,7 +34,7 @@ const About = () => {
         {
           from_name: 'Inscription Newsletter',
           from_email: newsletterEmail,
-          service: 'Newsletter Inovexia Academy',
+          service: 'Newsletter TRANSEIA Academy',
           message: `Nouvelle inscription à la newsletter:\n\nEmail: ${newsletterEmail}\nDate: ${new Date().toLocaleString('fr-FR')}\nSource: Page About`,
           to_email: 'koloziao2005@gmail.com',
         },
@@ -115,70 +116,77 @@ const About = () => {
       {/* Hero Section */}
       <div className="border-b border-slate-200 dark:border-white/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-          <div className="max-w-3xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 dark:bg-blue-500/10 border border-blue-200 dark:border-blue-500/20 text-blue-600 dark:text-blue-400 text-sm font-medium mb-6">
-              <Globe className="w-4 h-4" />
-              Partenaire de l'innovation numérique en Afrique de l'Ouest
+          <ScrollAnimation animateIn="fadeInUp">
+            <div className="max-w-3xl mx-auto text-center">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 dark:bg-blue-500/10 border border-blue-200 dark:border-blue-500/20 text-blue-600 dark:text-blue-400 text-sm font-medium mb-6">
+                <Globe className="w-4 h-4" />
+                Partenaire de l'innovation numérique en Afrique de l'Ouest
+              </div>
+              <h1 className="text-4xl md:text-6xl font-bold text-slate-900 dark:text-white mb-6">
+                De votre idée brute à la{' '}
+                <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                  réussite technologique rentable
+                </span>
+              </h1>
+              <p className="text-xl text-slate-600 dark:text-slate-400">
+                TRANSEIA est née d'une vision : démocratiser l'accès à l'ingénierie logicielle de classe mondiale et accompagner la montée en puissance de l'écosystème tech africain.
+              </p>
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold text-slate-900 dark:text-white mb-6">
-              De votre idée brute à la{' '}
-              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                réussite technologique rentable
-              </span>
-            </h1>
-            <p className="text-xl text-slate-600 dark:text-slate-400">
-              Inovexia est née d'une vision : démocratiser l'accès à l'ingénierie logicielle de classe mondiale et accompagner la montée en puissance de l'écosystème tech africain.
-            </p>
-          </div>
+          </ScrollAnimation>
         </div>
       </div>
 
       {/* Mission Section */}
       <div className="border-b border-slate-200 dark:border-white/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 dark:bg-emerald-500/10 border border-emerald-200 dark:border-emerald-500/20 text-emerald-600 dark:text-emerald-400 text-sm font-medium mb-6">
-                <Target className="w-4 h-4" />
-                Notre Mission
+          <ScrollAnimation animateIn="fadeInUp">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div>
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 dark:bg-emerald-500/10 border border-emerald-200 dark:border-emerald-500/20 text-emerald-600 dark:text-emerald-400 text-sm font-medium mb-6">
+                  <Target className="w-4 h-4" />
+                  Notre Mission
+                </div>
+                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-6">
+                  Catalyseur de transformation digitale
+                </h2>
+                <p className="text-slate-600 dark:text-slate-400 mb-4">
+                  Le paysage numérique en Afrique de l'Ouest traverse une phase de mutation structurelle profonde. La contribution de l'économie numérique au PIB mondial devrait atteindre 25% d'ici 2026, et l'Afrique subsaharienne est à l'avant-garde avec un marché estimé à 180 milliards de dollars d'ici 2025.
+                </p>
+                <p className="text-slate-600 dark:text-slate-400">
+                  Dans cet écosystème en pleine effervescence, TRANSEIA se positionne non seulement comme un prestataire technique, mais comme un <strong className="text-slate-900 dark:text-white">catalyseur de réussite technologique</strong>.
+                </p>
               </div>
-              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-6">
-                Catalyseur de transformation digitale
-              </h2>
-              <p className="text-slate-600 dark:text-slate-400 mb-4">
-                Le paysage numérique en Afrique de l'Ouest traverse une phase de mutation structurelle profonde. La contribution de l'économie numérique au PIB mondial devrait atteindre 25% d'ici 2026, et l'Afrique subsaharienne est à l'avant-garde avec un marché estimé à 180 milliards de dollars d'ici 2025.
-              </p>
-              <p className="text-slate-600 dark:text-slate-400">
-                Dans cet écosystème en pleine effervescence, Inovexia se positionne non seulement comme un prestataire technique, mais comme un <strong className="text-slate-900 dark:text-white">catalyseur de réussite technologique</strong>.
-              </p>
-            </div>
-            <div className="relative">
-              <div className="aspect-square rounded-3xl bg-gradient-to-br from-blue-500 to-purple-600 p-1">
-                <div className="w-full h-full rounded-3xl bg-white dark:bg-card flex items-center justify-center">
-                  <div className="text-center p-8">
-                    <TrendingUp className="w-20 h-20 mx-auto mb-4 text-blue-600 dark:text-blue-400" />
-                    <p className="text-4xl font-bold text-slate-900 dark:text-white mb-2">180 Mds $</p>
-                    <p className="text-slate-600 dark:text-slate-400">Marché numérique africain en 2025</p>
+              <div className="relative">
+                <div className="aspect-square rounded-3xl bg-gradient-to-br from-blue-500 to-purple-600 p-1">
+                  <div className="w-full h-full rounded-3xl bg-white dark:bg-card flex items-center justify-center">
+                    <div className="text-center p-8">
+                      <TrendingUp className="w-20 h-20 mx-auto mb-4 text-blue-600 dark:text-blue-400" />
+                      <p className="text-4xl font-bold text-slate-900 dark:text-white mb-2">180 Mds $</p>
+                      <p className="text-slate-600 dark:text-slate-400">Marché numérique africain en 2025</p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
+          </ScrollAnimation>
         </div>
       </div>
 
       {/* Values Section */}
       <div className="border-b border-slate-200 dark:border-white/5 bg-slate-50 dark:bg-[#080808]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4">
-              Nos valeurs fondamentales
-            </h2>
-            <p className="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-              Ces principes guident chacune de nos décisions et définissent notre approche du partenariat technologique.
-            </p>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <ScrollAnimation animateIn="fadeInUp">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4">
+                Nos valeurs fondamentales
+              </h2>
+              <p className="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+                Ces principes guident chacune de nos décisions et définissent notre approche du partenariat technologique.
+              </p>
+            </div>
+          </ScrollAnimation>
+          <ScrollAnimation animateIn="fadeInUp">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {values.map((value, index) => (
               <div
                 key={index}
@@ -196,13 +204,15 @@ const About = () => {
               </div>
             ))}
           </div>
+          </ScrollAnimation>
         </div>
       </div>
 
       {/* Stats Section */}
       <div className="border-b border-slate-200 dark:border-white/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <ScrollAnimation animateIn="fadeInUp">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
                 <div className="text-4xl md:text-5xl font-bold text-blue-600 dark:text-blue-400 mb-2">
@@ -214,25 +224,29 @@ const About = () => {
               </div>
             ))}
           </div>
+          </ScrollAnimation>
         </div>
       </div>
 
       {/* Team Section */}
       <div className="border-b border-slate-200 dark:border-white/5 bg-slate-50 dark:bg-[#080808]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-          <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-50 dark:bg-purple-500/10 border border-purple-200 dark:border-purple-500/20 text-purple-600 dark:text-purple-400 text-sm font-medium mb-6">
-              <Users className="w-4 h-4" />
-              Notre Équipe
+          <ScrollAnimation animateIn="fadeInUp">
+            <div className="text-center mb-12">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-50 dark:bg-purple-500/10 border border-purple-200 dark:border-purple-500/20 text-purple-600 dark:text-purple-400 text-sm font-medium mb-6">
+                <Users className="w-4 h-4" />
+                Notre Équipe
+              </div>
+              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4">
+                Experts passionnés par l'innovation
+              </h2>
+              <p className="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+                Une équipe pluridisciplinaire combinant excellence technique et compréhension profonde des enjeux locaux.
+              </p>
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4">
-              Experts passionnés par l'innovation
-            </h2>
-            <p className="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-              Une équipe pluridisciplinaire combinant excellence technique et compréhension profonde des enjeux locaux.
-            </p>
-          </div>
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          </ScrollAnimation>
+          <ScrollAnimation animateIn="fadeInUp">
+            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {team.map((member, index) => (
               <div
                 key={index}
@@ -283,13 +297,15 @@ const About = () => {
               </div>
             ))}
           </div>
+          </ScrollAnimation>
         </div>
       </div>
 
       {/* Newsletter Section */}
       <div className="border-t border-slate-200 dark:border-white/5 bg-slate-50 dark:bg-[#080808]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-          <div className="max-w-2xl mx-auto text-center">
+          <ScrollAnimation animateIn="fadeInUp">
+            <div className="max-w-2xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 dark:bg-emerald-500/10 border border-emerald-200 dark:border-emerald-500/20 text-emerald-600 dark:text-emerald-400 text-sm font-medium mb-6">
               <Rocket className="w-4 h-4" />
               Restez informé
@@ -331,6 +347,7 @@ const About = () => {
               </button>
             </form>
           </div>
+          </ScrollAnimation>
         </div>
       </div>
     </div>

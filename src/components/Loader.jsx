@@ -7,7 +7,7 @@ const Loader = ({ isLoading }) => {
     >
       <div className="flex flex-col items-center gap-4 animate-pulse">
         <iconify-icon icon="solar:infinity-linear" width="48" className="text-slate-900 dark:text-white"></iconify-icon>
-        <span className="text-sm font-medium tracking-[0.2em] text-slate-500 uppercase">Inovexia</span>
+        <span className="text-sm font-medium tracking-[0.2em] text-slate-500 uppercase">TRANSEIA</span>
       </div>
     </div>
   );
