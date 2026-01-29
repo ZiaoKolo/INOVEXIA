@@ -12,7 +12,7 @@ const Navigation = ({ darkMode, toggleDarkMode }) => {
       <div className="max-w-6xl mx-auto px-4 md:px-6 h-16 flex items-center justify-between">
         <RouterLink to="/" className="flex items-center gap-2 group">
           <iconify-icon icon="solar:infinity-linear" width="22" className="text-blue-600 dark:text-blue-400"></iconify-icon>
-          <span className="font-bold tracking-tight text-lg">TRANSEIA</span>
+          <span className="font-bold tracking-tight text-lg">ZOMTIK</span>
         </RouterLink>
 
         {/* Desktop Menu */}

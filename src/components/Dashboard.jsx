@@ -30,21 +30,21 @@ const Dashboard = () => {
   ];
 
   return (
-    <section className="bg-slate-50 dark:bg-dark">
+    <section className="bg-slate-50 dark:bg-dark pb-24 md:pb-0">
       <ContainerScroll
-        heightClass="h-[60rem] md:h-[80rem]"
-        titleComponent={
-          <div className="text-center mb-8">
-            <h2 className="text-3xl md:text-5xl font-bold text-slate-900 dark:text-white mb-4">
+        heightClass="h-auto md:h-[60rem] lg:h-[80rem]"
+      >
+        <div className="max-w-7xl mx-auto">
+          {/* Title - Now inside content */}
+          <div className="text-center mb-6 md:mb-8 px-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 dark:text-white mb-2 md:mb-4">
               Tableau de Bord de Performance
             </h2>
-            <p className="text-lg text-slate-600 dark:text-slate-400">
+            <p className="text-sm md:text-base lg:text-lg text-slate-600 dark:text-slate-400">
               Visualisez vos métriques en temps réel
             </p>
           </div>
-        }
-      >
-        <div className="max-w-7xl mx-auto">
+          
           {/* Main Container */}
           <div className="flex flex-col lg:flex-row gap-4 md:gap-6 rounded-2xl md:rounded-[32px] overflow-hidden bg-white dark:bg-dark/80 border border-slate-200 dark:border-slate-800 shadow-xl" style={{ borderBottom: 'none' }}>
             
@@ -52,7 +52,7 @@ const Dashboard = () => {
             <div className="w-full lg:w-64 bg-slate-100 dark:bg-dark/50 p-4 md:p-6 border-b lg:border-b-0 lg:border-r border-slate-200 dark:border-slate-700">
               <div className="flex items-center gap-2 mb-8">
                 <iconify-icon icon="solar:infinity-linear" width="28" className="text-slate-900 dark:text-white"></iconify-icon>
-                <h2 className="text-lg font-bold text-slate-900 dark:text-white">TRANSEIA</h2>
+                <h2 className="text-lg font-bold text-slate-900 dark:text-white">ZOMTIK</h2>
               </div>
               
               <nav className="space-y-2 md:space-y-4 grid grid-cols-3 lg:grid-cols-1 gap-2">

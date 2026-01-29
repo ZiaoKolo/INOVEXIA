@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { Calendar, Clock, ArrowRight, TrendingUp, Code, Rocket } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import emailjs from '@emailjs/browser';
-import ScrollAnimation from './ScrollAnimation';
 
 const Blog = () => {
   const [activeCategory, setActiveCategory] = useState('Tous');
@@ -110,8 +109,8 @@ const Blog = () => {
         {
           from_name: 'Inscription Newsletter',
           from_email: newsletterEmail,
-          service: 'Newsletter TRANSEIA Academy',
-          message: `Nouvelle inscription à la newsletter:\n\nEmail: ${newsletterEmail}\nDate: ${new Date().toLocaleString('fr-FR')}\nSource: Blog TRANSEIA`,
+          service: 'Newsletter ZOMTIK Academy',
+          message: `Nouvelle inscription à la newsletter:\n\nEmail: ${newsletterEmail}\nDate: ${new Date().toLocaleString('fr-FR')}\nSource: Blog ZOMTIK`,
           to_email: 'koloziao2005@gmail.com',
         },
         publicKey
@@ -148,20 +147,20 @@ const Blog = () => {
       {/* Hero Section */}
       <div className="border-b border-slate-200 dark:border-white/5 bg-slate-50 dark:bg-[#080808]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-          <ScrollAnimation animateIn="fadeInUp">
+          
             <div className="max-w-3xl">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 dark:bg-blue-500/10 border border-blue-200 dark:border-blue-500/20 text-blue-600 dark:text-blue-400 text-sm font-medium mb-6">
                 <TrendingUp className="w-4 h-4" />
                 Ressources Tech & Business
               </div>
               <h1 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-4">
-                Academy TRANSEIA
+                Academy ZOMTIK
               </h1>
               <p className="text-lg text-slate-600 dark:text-slate-400">
                 Guides pratiques, tutoriels techniques et stratégies de croissance pour réussir dans l'écosystème tech africain.
               </p>
             </div>
-          </ScrollAnimation>
+          
         </div>
       </div>
 
@@ -190,7 +189,7 @@ const Blog = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16 border-t border-slate-200 dark:border-slate-700 pt-10">
           {filteredArticles.map((article, idx) => (
-            <ScrollAnimation key={article.id} animateIn="fadeInUp">
+            
               <article
                 className="flex max-w-xl flex-col items-start justify-between"
               >
@@ -245,7 +244,7 @@ const Blog = () => {
                 </div>
               </div>
             </article>
-            </ScrollAnimation>
+            
           ))}
         </div>
       </div>
@@ -253,7 +252,7 @@ const Blog = () => {
       {/* Newsletter Section */}
       <div className="border-t border-slate-200 dark:border-white/5 bg-slate-50 dark:bg-[#080808]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-          <ScrollAnimation animateIn="fadeInUp">
+          
             <div className="max-w-2xl mx-auto text-center">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 dark:bg-emerald-500/10 border border-emerald-200 dark:border-emerald-500/20 text-emerald-600 dark:text-emerald-400 text-sm font-medium mb-6">
                 <Rocket className="w-4 h-4" />
@@ -296,7 +295,7 @@ const Blog = () => {
               </button>
             </form>
           </div>
-          </ScrollAnimation>
+          
         </div>
       </div>
     </div>

@@ -18,7 +18,6 @@ import Privacy from './components/Privacy';
 import Terms from './components/Terms';
 import CookiePolicy from './components/CookiePolicy';
 import NotFound from './components/NotFound';
-import SmoothScrollProvider from './components/SmoothScrollProvider';
 
 function HomePage({ darkMode, toggleDarkMode }) {
   return (
@@ -71,10 +70,9 @@ function App() {
 
   return (
     <Router>
-      <SmoothScrollProvider options={{ duration: 1.2, lerp: 0.08 }}>
-        <div className="bg-slate-50 text-slate-900 dark:bg-dark dark:text-slate-100 transition-colors duration-300 antialiased">
-          <Loader isLoading={isLoading} />
-          <Routes>
+      <div className="bg-slate-50 text-slate-900 dark:bg-dark dark:text-slate-100 transition-colors duration-300 antialiased">
+        <Loader isLoading={isLoading} />
+        <Routes>
           <Route path="/" element={<HomePage darkMode={darkMode} toggleDarkMode={toggleDarkMode} />} />
           <Route path="/blog" element={
             <>
@@ -120,8 +118,7 @@ function App() {
           } />
           <Route path="*" element={<NotFound />} />
         </Routes>
-        </div>
-      </SmoothScrollProvider>
+      </div>
     </Router>
   );
 }

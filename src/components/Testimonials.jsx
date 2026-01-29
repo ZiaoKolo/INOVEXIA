@@ -5,37 +5,37 @@ const testimonials = [
   {
     name: "Amadou Diop",
     role: "CEO, TechStartup Dakar",
-    body: "TRANSEIA a transformé notre vision en un produit SaaS rentable en un temps record. Leur compréhension des enjeux africains fait toute la différence.",
+    body: "ZOMTIK a transformé notre vision en un produit SaaS rentable en un temps record. Leur compréhension des enjeux africains fait toute la différence.",
     img: "/testimonials/portrait-handsome-man-orange-background.jpg",
   },
   {
     name: "Aïssatou Ndiaye",
     role: "Fondatrice, Senegal Digital Hub",
-    body: "Une compréhension fine des besoins africains. Des résultats qui dépassent nos attentes. TRANSEIA est plus qu'un prestataire, c'est un véritable partenaire stratégique.",
+    body: "Une compréhension fine des besoins africains. Des résultats qui dépassent nos attentes. ZOMTIK est plus qu'un prestataire, c'est un véritable partenaire stratégique.",
     img: "/testimonials/smiley-african-woman-with-golden-earrings.jpg",
   },
   {
     name: "Kwame Mensah",
     role: "CTO, Ghana Tech Solutions",
-    body: "L'architecture que TRANSEIA a mise en place pour notre MVP nous permet de scaler sereinement. Code propre, documentation exemplaire, équipe réactive.",
+    body: "L'architecture que ZOMTIK a mise en place pour notre MVP nous permet de scaler sereinement. Code propre, documentation exemplaire, équipe réactive.",
     img: "/testimonials/young-successful-african-businessman-posing-dark.jpg",
   },
   {
     name: "Ama Boateng",
     role: "Directrice, Design Afrique",
-    body: "Collaboration fluide, délais respectés et produit final exceptionnel. TRANSEIA combine excellence technique et sens du design.",
+    body: "Collaboration fluide, délais respectés et produit final exceptionnel. ZOMTIK combine excellence technique et sens du design.",
     img: "/testimonials/portrait-fashionable-woman-looking-away.jpg",
   },
   {
     name: "Chukwudi Okonkwo",
     role: "Fondateur, Lagos Innovation Lab",
-    body: "Le mentorat technique de TRANSEIA a transformé notre équipe. Leur approche pédagogique et leur maîtrise des stacks modernes sont incomparables.",
+    body: "Le mentorat technique de ZOMTIK a transformé notre équipe. Leur approche pédagogique et leur maîtrise des stacks modernes sont incomparables.",
     img: "/testimonials/portrait-modern-man-caffe.jpg",
   },
   {
     name: "Affoué Kouamé",
     role: "CEO, Abidjan StartupHub",
-    body: "Le partenaire idéal pour passer d'une idée à une réalité technologique scalable. TRANSEIA combine vision stratégique et exécution impeccable.",
+    body: "Le partenaire idéal pour passer d'une idée à une réalité technologique scalable. ZOMTIK combine vision stratégique et exécution impeccable.",
     img: "/testimonials/attractive-plus-size-model-white-shirt-apparel.jpg",
   },
   {
@@ -47,7 +47,7 @@ const testimonials = [
   {
     name: "Grace Wanjiru",
     role: "Fondatrice, Nairobi Tech Women",
-    body: "Professionnalisme exemplaire et solutions innovantes. TRANSEIA comprend les défis spécifiques des startups africaines et livre des solutions adaptées.",
+    body: "Professionnalisme exemplaire et solutions innovantes. ZOMTIK comprend les défis spécifiques des startups africaines et livre des solutions adaptées.",
     img: "/testimonials/fashionable-african-woman-floral-coat.jpg",
   },
 ];
@@ -78,8 +78,6 @@ const TestimonialCard = ({ img, name, role, body }) => {
     </figure>
   );
 };
-
-import ScrollAnimation from './ScrollAnimation';
 
 const Testimonials = () => {
   return (

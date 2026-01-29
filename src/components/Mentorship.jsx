@@ -1,10 +1,9 @@
 import { Link } from 'react-scroll';
-import ScrollAnimation from './ScrollAnimation';
 
 const Mentorship = () => {
   return (
-    <section id="mentorship" className="py-24 px-6 bg-slate-50 dark:bg-[#080808]">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <section id="mentorship" className="py-16 md:py-24 px-4 md:px-6 bg-slate-50 dark:bg-[#080808]">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
         <div className="order-2 lg:order-1">
           <div className="relative rounded-2xl overflow-hidden border border-slate-200 dark:border-white/10 shadow-lg">
             <div className="absolute inset-0 bg-slate-100 dark:bg-white/5 z-0"></div>
@@ -40,26 +39,26 @@ const Mentorship = () => {
         </div>
         
         <div className="order-1 lg:order-2">
-          <ScrollAnimation animateIn="fadeInUp">
+          
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-indigo-200 dark:border-indigo-500/30 bg-indigo-50 dark:bg-indigo-500/10 mb-6">
               <iconify-icon icon="solar:stars-linear" className="text-indigo-600 dark:text-indigo-400"></iconify-icon>
               <span className="text-xs font-medium text-indigo-600 dark:text-indigo-400 tracking-wide uppercase">Mentorat d'élite</span>
             </div>
-          </ScrollAnimation>
           
-          <ScrollAnimation animateIn="fadeInUp">
+          
+          
             <h2 className="text-3xl md:text-4xl font-medium tracking-tight text-slate-900 dark:text-white mb-6">
               Ne développez plus seul, <br /> accélérez votre carrière.
             </h2>
-          </ScrollAnimation>
           
-          <ScrollAnimation animateIn="fadeInUp">
+          
+          
             <p className="text-lg text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
               Sessions d'accompagnement technique personnalisées via Google Meet. Nous vous aidons à résoudre des bugs complexes, à structurer vos projets de fin d'études et à maîtriser les stacks les plus demandées du marché.
             </p>
-          </ScrollAnimation>
           
-          <ScrollAnimation animateIn="fadeInUp">
+          
+          
             <ul className="space-y-4 mb-8">
               <li className="flex items-start gap-3 text-slate-700 dark:text-slate-300">
                 <iconify-icon icon="solar:check-circle-bold" className="text-emerald-500 mt-1" width="22"></iconify-icon>
@@ -74,7 +73,7 @@ const Mentorship = () => {
                 <span>Coaching carrière pour intégrer les meilleures firmes tech mondiales</span>
               </li>
             </ul>
-          </ScrollAnimation>
+          
 
           <Link 
             to="contact" 

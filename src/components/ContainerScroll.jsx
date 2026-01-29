@@ -17,17 +17,17 @@ export const ContainerScroll = ({ titleComponent, children, heightClass = 'h-[50
 		return () => window.removeEventListener('resize', checkMobile);
 	}, []);
 
-	const scaleDimensions = () => (isMobile ? [0.95, 1] : [1.05, 1]);
+	const scaleDimensions = () => (isMobile ? [0.9, 1] : [1.05, 1]);
 
-	const rotate = useTransform(scrollYProgress, [0, 1], [18, 0]);
+	const rotate = useTransform(scrollYProgress, [0, 1], isMobile ? [0, 0] : [18, 0]);
 	const scale = useTransform(scrollYProgress, [0, 1], scaleDimensions());
-	const translate = useTransform(scrollYProgress, [0, 1], [0, -80]);
+	const translate = useTransform(scrollYProgress, [0, 1], isMobile ? [0, 0] : [0, -80]);
 
 	return (
-		<div className={`${heightClass} flex items-center justify-center relative p-4 md:p-12`} ref={containerRef}>
-			<div className="w-full py-8 md:py-20 relative" style={{ perspective: '1000px' }}>
+		<div className={`${heightClass} flex items-center justify-center relative pb-2 px-2 md:p-8 lg:p-12`} ref={containerRef}>
+			<div className="w-full py-4 md:py-12 lg:py-20 relative" style={{ perspective: '1000px' }}>
 				{titleComponent && (
-					<motion.div style={{ translateY: translate }} className="max-w-5xl mx-auto text-center mb-6">
+					<motion.div style={{ translateY: translate }} className="max-w-5xl mx-auto text-center mb-4 md:mb-6">
 						{titleComponent}
 					</motion.div>
 				)}
