@@ -90,7 +90,7 @@ const BlogPost = () => {
         </ul>
         
         <blockquote>
-          "L'intégration des paiements mobiles n'est pas une option, c'est une nécessité pour atteindre 90% du marché africain." - Équipe ZOMTIK
+          "L'intégration des paiements mobiles n'est pas une option, c'est une nécessité pour atteindre 90% du marché africain." - Équipe ZOTECS
         </blockquote>
         
         <h2>4. Modèle de tarification</h2>
@@ -116,7 +116,7 @@ const BlogPost = () => {
         <h2>Conclusion</h2>
         <p>Créer un SaaS rentable en Afrique demande de la persévérance, mais les opportunités sont immenses. En suivant ces étapes et en restant à l'écoute de vos utilisateurs, vous pouvez construire une entreprise technologique prospère qui répond aux besoins réels du marché africain.</p>
         
-        <p><strong>Besoin d'aide pour lancer votre SaaS ?</strong> Contactez ZOMTIK pour un accompagnement personnalisé de la conception au déploiement.</p>
+        <p><strong>Besoin d'aide pour lancer votre SaaS ?</strong> Contactez ZOTECS pour un accompagnement personnalisé de la conception au déploiement.</p>
       `
     },
     {
@@ -200,7 +200,7 @@ const BlogPost = () => {
           <li>Itérez toutes les 2 semaines</li>
         </ul>
         
-        <p><strong>Prêt à construire votre MVP ?</strong> ZOMTIK peut vous accompagner de A à Z avec notre formule "MVP 30 jours".</p>
+        <p><strong>Prêt à construire votre MVP ?</strong> ZOTECS peut vous accompagner de A à Z avec notre formule "MVP 30 jours".</p>
       `
     },
     {
@@ -305,7 +305,7 @@ async function handleCustomerQuery(question) {
         </ul>
         
         <blockquote>
-          "L'IA n'est pas là pour remplacer l'humain, mais pour augmenter ses capacités et automatiser les tâches répétitives." - Équipe ZOMTIK
+          "L'IA n'est pas là pour remplacer l'humain, mais pour augmenter ses capacités et automatiser les tâches répétitives." - Équipe ZOTECS
         </blockquote>
         
         <h2>Exemple : Générateur de descriptions produits</h2>
@@ -333,7 +333,7 @@ async function generateProductDescription(product) {
         <h2>Conclusion</h2>
         <p>L'intégration de l'IA générative peut transformer votre application et vous donner un avantage compétitif significatif. Commencez petit avec un cas d'usage simple, mesurez les résultats, puis élargissez progressivement.</p>
         
-        <p><strong>Besoin d'aide pour intégrer l'IA dans votre application ?</strong> Nos experts ZOMTIK peuvent vous accompagner du POC à la production.</p>
+        <p><strong>Besoin d'aide pour intégrer l'IA dans votre application ?</strong> Nos experts ZOTECS peuvent vous accompagner du POC à la production.</p>
       `
     },
     {
@@ -426,7 +426,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
           <li>✅ Service Worker pour offline</li>
         </ul>
         
-        <p><strong>Votre site est-il optimisé pour le marché africain ?</strong> ZOMTIK peut auditer et optimiser vos performances web.</p>
+        <p><strong>Votre site est-il optimisé pour le marché africain ?</strong> ZOTECS peut auditer et optimiser vos performances web.</p>
       `
     },
     {
@@ -554,7 +554,7 @@ app.post('/api/payment-webhook', async (req, res) => {
         </ul>
         
         <blockquote>
-          "Avec Mobile Money, vous pouvez monétiser 10x plus d'utilisateurs qu'avec seulement les cartes bancaires en Afrique." - ZOMTIK
+          "Avec Mobile Money, vous pouvez monétiser 10x plus d'utilisateurs qu'avec seulement les cartes bancaires en Afrique." - ZOTECS
         </blockquote>
         
         <h2>Conformité et sécurité</h2>
@@ -565,7 +565,7 @@ app.post('/api/payment-webhook', async (req, res) => {
           <li>Implémentez la détection de fraude</li>
         </ul>
         
-        <p><strong>Besoin d'aide pour intégrer Mobile Money ?</strong> ZOMTIK peut gérer toute l'intégration technique pour vous.</p>
+        <p><strong>Besoin d'aide pour intégrer Mobile Money ?</strong> ZOTECS peut gérer toute l'intégration technique pour vous.</p>
       `
     },
     {
@@ -742,7 +742,7 @@ npm install next-sitemap
           <li>Partenariats stratégiques</li>
         </ul>
         
-        <p><strong>Besoin d'une stratégie SEO sur-mesure ?</strong> ZOMTIK peut auditer votre site et créer un plan d'action SEO personnalisé.</p>
+        <p><strong>Besoin d'une stratégie SEO sur-mesure ?</strong> ZOTECS peut auditer votre site et créer un plan d'action SEO personnalisé.</p>
       `
     }
   ];
@@ -928,7 +928,7 @@ npm install next-sitemap
             Besoin d'aide pour votre projet ?
           </h3>
           <p className="text-slate-600 dark:text-slate-400 mb-6">
-            Nos experts ZOMTIK peuvent vous accompagner de la conception au déploiement de votre application.
+            Nos experts ZOTECS peuvent vous accompagner de la conception au déploiement de votre application.
           </p>
           <Link
             to="/#contact"

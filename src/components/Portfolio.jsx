@@ -26,7 +26,7 @@ const projectsData = [
       'Design moderne et accessible'
     ],
     description: 'Solution mobile complète pour la gestion de maquis avec suivi du stock et analyse des ventes.',
-    fullDescription: 'ZOMTIK a conçu une application Android professionnelle pour moderniser la gestion des maquis et restaurants locaux. Cette solution hors ligne permet une gestion complète du stock, des ventes et offre des statistiques détaillées sans nécessiter de connexion Internet.',
+    fullDescription: 'ZOTECS a conçu une application Android professionnelle pour moderniser la gestion des maquis et restaurants locaux. Cette solution hors ligne permet une gestion complète du stock, des ventes et offre des statistiques détaillées sans nécessiter de connexion Internet.',
     challenge: 'Notre client avait besoin d\'une solution fiable fonctionnant sans connexion Internet, avec une interface simple pour des utilisateurs variés tout en garantissant la fiabilité des données.',
     solution: 'Nous avons développé une architecture MVVM robuste avec Room Database, garantissant des performances optimales et une expérience utilisateur fluide grâce à Material Design.',
     role: 'Vision Studio',
@@ -58,10 +58,10 @@ const projectsData = [
       'Performance et SEO optimisés'
     ],
     description: 'Plateforme web intelligente pour découvrir des recettes basées sur les ingrédients disponibles.',
-    fullDescription: 'ZOMTIK a créé un assistant culinaire innovant combinant intelligence artificielle et design moderne. La plateforme aide les utilisateurs à transformer leurs ingrédients en délicieux plats tout en valorisant la richesse gastronomique africaine.',
+    fullDescription: 'ZOTECS a créé un assistant culinaire innovant combinant intelligence artificielle et design moderne. La plateforme aide les utilisateurs à transformer leurs ingrédients en délicieux plats tout en valorisant la richesse gastronomique africaine.',
     challenge: 'Créer une expérience utilisateur exceptionnelle qui rende la recherche de recettes naturelle et personnalisée, tout en mettant en avant la diversité culinaire mondiale.',
     solution: 'Nous avons intégré l\'IA Gemini avec l\'API TheMealDB dans une interface Next.js performante, offrant des suggestions intelligentes et une expérience utilisateur fluide.',
-    role: 'ZOMTIK',
+    role: 'ZOTECS',
     responsibilities: 'Conception UX/UI, intégration IA générative, développement full-stack, optimisation SEO',
     timeline: 'Décembre 2025',
     duration: 'Livré - Version beta déployée'
@@ -90,10 +90,10 @@ const projectsData = [
       'Authentification sécurisée'
     ],
     description: 'Solution e-commerce complète pour la vente de fournitures scolaires avec gestion avancée.',
-    fullDescription: 'ZOMTIK a développé une plateforme e-commerce moderne dédiée aux fournitures scolaires, combinant une API Django robuste avec une interface React fluide pour une expérience d\'achat optimale.',
+    fullDescription: 'ZOTECS a développé une plateforme e-commerce moderne dédiée aux fournitures scolaires, combinant une API Django robuste avec une interface React fluide pour une expérience d\'achat optimale.',
     challenge: 'Concevoir une architecture scalable séparant frontend et backend, avec une gestion sécurisée des transactions et un système de gestion de catalogue flexible.',
     solution: 'Architecture moderne avec Django REST Framework pour le backend et React pour le frontend, garantissant sécurité, performance et évolutivité.',
-    role: 'ZOMTIK',
+    role: 'ZOTECS',
     responsibilities: 'Architecture système full-stack, développement backend/frontend, intégration paiements, déploiement',
     timeline: 'Développé en 2025',
     duration: 'Projet livré et en production'
@@ -121,10 +121,10 @@ const projectsData = [
       'Intégration IA native Chrome'
     ],
     description: 'Extension Chrome innovante utilisant l\'IA pour améliorer la concentration et la productivité.',
-    fullDescription: 'ZOMTIK a conçu une extension Chrome intelligente qui révolutionne la gestion de la concentration. En analysant le contenu web en temps réel, elle aide les utilisateurs à rester focusés sur leurs objectifs.',
+    fullDescription: 'ZOTECS a conçu une extension Chrome intelligente qui révolutionne la gestion de la concentration. En analysant le contenu web en temps réel, elle aide les utilisateurs à rester focusés sur leurs objectifs.',
     challenge: 'Développer une solution intelligente qui comprend le contexte réel de l\'utilisateur et offre des rappels personnalisés sans être intrusive, là où les bloqueurs traditionnels échouent.',
     solution: 'Utilisation des APIs d\'IA natives de Chrome pour une analyse sémantique en temps réel et des alertes contextuelles, le tout dans une interface élégante et non-intrusive.',
-    role: 'ZOMTIK',
+    role: 'ZOTECS',
     responsibilities: 'Conception produit, intégration APIs IA, développement extension Chrome, design UX/UI',
     timeline: 'Projet en cours',
     duration: 'Développement actif - Beta testing'

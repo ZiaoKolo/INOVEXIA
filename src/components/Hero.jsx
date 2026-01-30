@@ -21,7 +21,7 @@ const Hero = () => {
           </h1>
           
           <p className="text-base sm:text-lg md:text-xl text-slate-600 dark:text-slate-300 mb-10 max-w-2xl mx-auto leading-relaxed font-medium transition-colors duration-500 px-4">
-            ZOMTIK conçoit des produits SaaS premium et des MVP scalables pour les entreprises innovantes. Nous accompagnons également la montée en compétences des talents de demain par un mentorat technique d'élite.
+            ZOTECS conçoit des produits SaaS premium et des MVP scalables pour les entreprises innovantes. Nous accompagnons également la montée en compétences des talents de demain par un mentorat technique d'élite.
           </p>
           
           <div className="flex flex-col md:flex-row items-center justify-center gap-4 relative px-4">

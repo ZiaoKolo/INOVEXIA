@@ -33,7 +33,7 @@ const Terms = () => {
               3. Propriété intellectuelle
             </h2>
             <p className="text-slate-700 dark:text-slate-300 mb-4">
-              Tout le contenu inclus sur ce site, tel que le texte, les graphiques, les logos, les images, les clips audio et vidéo, la compilation numérique et tous les logiciels, est la propriété de ZOMTIK ou de ses fournisseurs de contenu et protégé par les lois internationales sur la propriété intellectuelle.
+              Tout le contenu inclus sur ce site, tel que le texte, les graphiques, les logos, les images, les clips audio et vidéo, la compilation numérique et tous les logiciels, est la propriété de ZOTECS ou de ses fournisseurs de contenu et protégé par les lois internationales sur la propriété intellectuelle.
             </p>
           </div>
 
@@ -42,7 +42,7 @@ const Terms = () => {
               4. Limitation de responsabilité
             </h2>
             <p className="text-slate-700 dark:text-slate-300 mb-4">
-              Ce site est fourni "tel quel". ZOMTIK ne garantit pas que le site sera sans erreur ou sans interruption. Dans la limite maximale autorisée par la loi, ZOMTIK sera sans responsabilité pour tous les dommages-intérêts découlant de l'utilisation de ce site, y compris sans limitation les dommages-intérêts indirects ou consécutifs.
+              Ce site est fourni "tel quel". ZOTECS ne garantit pas que le site sera sans erreur ou sans interruption. Dans la limite maximale autorisée par la loi, ZOTECS sera sans responsabilité pour tous les dommages-intérêts découlant de l'utilisation de ce site, y compris sans limitation les dommages-intérêts indirects ou consécutifs.
             </p>
           </div>
 
@@ -51,7 +51,7 @@ const Terms = () => {
               5. Liens externes
             </h2>
             <p className="text-slate-700 dark:text-slate-300 mb-4">
-              Ce site peut contenir des liens vers des sites tiers. ZOMTIK n'est pas responsable du contenu ou de la disponibilité de ces sites externes et ne les endosse pas. Votre utilisation de ces sites externes est à vos propres risques et est soumise à leurs conditions d'utilisation.
+              Ce site peut contenir des liens vers des sites tiers. ZOTECS n'est pas responsable du contenu ou de la disponibilité de ces sites externes et ne les endosse pas. Votre utilisation de ces sites externes est à vos propres risques et est soumise à leurs conditions d'utilisation.
             </p>
           </div>
 
@@ -60,7 +60,7 @@ const Terms = () => {
               6. Modifications des conditions
             </h2>
             <p className="text-slate-700 dark:text-slate-300 mb-4">
-              ZOMTIK se réserve le droit de modifier ces conditions d'utilisation à tout moment. Les modifications prendront effet immédiatement après leur publication. Votre utilisation continue du site implique votre acceptation des conditions modifiées.
+              ZOTECS se réserve le droit de modifier ces conditions d'utilisation à tout moment. Les modifications prendront effet immédiatement après leur publication. Votre utilisation continue du site implique votre acceptation des conditions modifiées.
             </p>
           </div>
 

@@ -27,7 +27,7 @@ const Footer = () => {
           <div className="md:col-span-1">
             <div className="flex items-center gap-2 mb-4">
               <iconify-icon icon="solar:infinity-linear" width="20" className="text-blue-600 dark:text-blue-400"></iconify-icon>
-              <span className="text-base font-bold text-slate-900 dark:text-white tracking-tight">ZOMTIK</span>
+              <span className="text-base font-bold text-slate-900 dark:text-white tracking-tight">ZOTECS</span>
             </div>
             <p className="text-sm text-slate-500 dark:text-slate-400 mb-4">
               Partenaire de l'innovation numérique en Afrique de l'Ouest.
@@ -163,7 +163,7 @@ const Footer = () => {
         <div className="pt-8 border-t border-slate-200 dark:border-white/5">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-xs text-slate-400 text-center md:text-left">
-              © 2026 ZOMTIK. Tous droits réservés.
+              © 2026 ZOTECS. Tous droits réservés.
             </p>
             <div className="flex gap-6 text-xs text-slate-400">
               <RouterLink to="/privacy" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Confidentialité</RouterLink>

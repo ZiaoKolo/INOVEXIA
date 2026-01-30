@@ -52,7 +52,7 @@ const Dashboard = () => {
             <div className="w-full lg:w-64 bg-slate-100 dark:bg-dark/50 p-4 md:p-6 border-b lg:border-b-0 lg:border-r border-slate-200 dark:border-slate-700">
               <div className="flex items-center gap-2 mb-8">
                 <iconify-icon icon="solar:infinity-linear" width="28" className="text-slate-900 dark:text-white"></iconify-icon>
-                <h2 className="text-lg font-bold text-slate-900 dark:text-white">ZOMTIK</h2>
+                <h2 className="text-lg font-bold text-slate-900 dark:text-white">ZOTECS</h2>
               </div>
               
               <nav className="space-y-2 md:space-y-4 grid grid-cols-3 lg:grid-cols-1 gap-2">

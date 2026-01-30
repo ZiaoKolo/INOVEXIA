@@ -33,7 +33,7 @@ const About = () => {
         {
           from_name: 'Inscription Newsletter',
           from_email: newsletterEmail,
-          service: 'Newsletter ZOMTIK Academy',
+          service: 'Newsletter ZOTECS Academy',
           message: `Nouvelle inscription à la newsletter:\n\nEmail: ${newsletterEmail}\nDate: ${new Date().toLocaleString('fr-FR')}\nSource: Page About`,
           to_email: 'koloziao2005@gmail.com',
         },
@@ -128,7 +128,7 @@ const About = () => {
                 </span>
               </h1>
               <p className="text-xl text-slate-600 dark:text-slate-400">
-                ZOMTIK est née d'une vision : démocratiser l'accès à l'ingénierie logicielle de classe mondiale et accompagner la montée en puissance de l'écosystème tech africain.
+                ZOTECS est née d'une vision : démocratiser l'accès à l'ingénierie logicielle de classe mondiale et accompagner la montée en puissance de l'écosystème tech africain.
               </p>
             </div>
           
@@ -152,7 +152,7 @@ const About = () => {
                   Le paysage numérique en Afrique de l'Ouest traverse une phase de mutation structurelle profonde. La contribution de l'économie numérique au PIB mondial devrait atteindre 25% d'ici 2026, et l'Afrique subsaharienne est à l'avant-garde avec un marché estimé à 180 milliards de dollars d'ici 2025.
                 </p>
                 <p className="text-slate-600 dark:text-slate-400">
-                  Dans cet écosystème en pleine effervescence, ZOMTIK se positionne non seulement comme un prestataire technique, mais comme un <strong className="text-slate-900 dark:text-white">catalyseur de réussite technologique</strong>.
+                  Dans cet écosystème en pleine effervescence, ZOTECS se positionne non seulement comme un prestataire technique, mais comme un <strong className="text-slate-900 dark:text-white">catalyseur de réussite technologique</strong>.
                 </p>
               </div>
               <div className="relative">
