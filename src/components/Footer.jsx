@@ -33,16 +33,16 @@ const Footer = () => {
               Partenaire de l'innovation numérique en Afrique de l'Ouest.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                 <iconify-icon icon="solar:twitter-linear" width="20"></iconify-icon>
               </a>
-              <a href="#" className="text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                 <iconify-icon icon="solar:linkedin-linear" width="20"></iconify-icon>
               </a>
-              <a href="#" className="text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                 <iconify-icon icon="solar:github-linear" width="20"></iconify-icon>
               </a>
-              <a href="#" className="text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                 <iconify-icon icon="solar:youtube-linear" width="20"></iconify-icon>
               </a>
             </div>
@@ -126,12 +126,12 @@ const Footer = () => {
               </li>
               <li>
                 {isHomePage ? (
-                  <Link to="contact" smooth={true} duration={500} className="text-sm text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-pointer">
-                    Contact
+                  <Link to="testimonials" smooth={true} duration={500} className="text-sm text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-pointer">
+                    Témoignages
                   </Link>
                 ) : (
-                  <button onClick={() => handleScrollLink('contact')} className="text-sm text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-pointer">
-                    Contact
+                  <button onClick={() => handleScrollLink('testimonials')} className="text-sm text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-pointer">
+                    Témoignages
                   </button>
                 )}
               </li>
@@ -140,19 +140,38 @@ const Footer = () => {
 
           {/* Contact */}
           <div>
-            <h3 className="text-sm font-semibold text-slate-900 dark:text-white mb-4 uppercase tracking-wider">Contact</h3>
+            <h3 className="text-sm font-semibold text-slate-900 dark:text-white mb-4 uppercase tracking-wider">Liens</h3>
             <ul className="space-y-2">
-              <li className="text-sm text-slate-500 dark:text-slate-400">
-                Abidjan, Côte d'Ivoire
+              <li>
+                {isHomePage ? (
+                  <Link to="dashboard" smooth={true} duration={500} className="text-sm text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-pointer">
+                    Tableau de Bord
+                  </Link>
+                ) : (
+                  <button onClick={() => handleScrollLink('dashboard')} className="text-sm text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-pointer">
+                    Tableau de Bord
+                  </button>
+                )}
+              </li>
+              <li>
+                {isHomePage ? (
+                  <Link to="mentorship" smooth={true} duration={500} className="text-sm text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-pointer">
+                    Mentorat
+                  </Link>
+                ) : (
+                  <button onClick={() => handleScrollLink('mentorship')} className="text-sm text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-pointer">
+                    Mentorat
+                  </button>
+                )}
               </li>
               <li>
                 <a href="mailto:koloziao2005@gmail.com" className="text-sm text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-                  koloziao2005@gmail.com
+                  Email
                 </a>
               </li>
               <li>
-                <a href="https://whatsapp.com/dl/" target="_blank" rel="noopener noreferrer" className="text-sm text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-                  WhatsApp Support
+                <a href="https://wa.me/2250768249990" target="_blank" rel="noopener noreferrer" className="text-sm text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                  WhatsApp
                 </a>
               </li>
             </ul>
