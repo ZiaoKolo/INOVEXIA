@@ -101,7 +101,7 @@ const Contact = () => {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-lg px-4 py-3 text-sm text-slate-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-slate-900 dark:focus:ring-white transition-all" 
+                  className="w-full bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-lg px-4 py-3.5 md:py-3 text-base md:text-sm text-slate-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-slate-900 dark:focus:ring-white transition-all" 
                   placeholder="Jean Dupont"
                 />
               </div>
@@ -113,7 +113,7 @@ const Contact = () => {
                   value={formData.email}
                   required
                   onChange={handleChange}
-                  className="w-full bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-lg px-4 py-3 text-sm text-slate-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-slate-900 dark:focus:ring-white transition-all" 
+                  className="w-full bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-lg px-4 py-3.5 md:py-3 text-base md:text-sm text-slate-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-slate-900 dark:focus:ring-white transition-all" 
                   placeholder="jean@company.fr"
                 />
               </div>
@@ -125,7 +125,7 @@ const Contact = () => {
                   name="service"
                   value={formData.service}
                   onChange={handleChange}
-                  className="w-full bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-lg px-4 py-3 text-sm text-slate-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-slate-900 dark:focus:ring-white transition-all appearance-none cursor-pointer [&>option]:bg-white [&>option]:dark:bg-black [&>option]:text-slate-900 [&>option]:dark:text-white"
+                  className="w-full bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-lg px-4 py-3.5 md:py-3 text-base md:text-sm text-slate-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-slate-900 dark:focus:ring-white transition-all appearance-none cursor-pointer [&>option]:bg-white [&>option]:dark:bg-black [&>option]:text-slate-900 [&>option]:dark:text-white"
                 >
                   <option value="MVP SaaS (30 jours)">MVP SaaS (30 jours)</option>
                   <option value="Développement Web & Mobile">Développement Web & Mobile</option>
@@ -143,8 +143,8 @@ const Contact = () => {
                 value={formData.message}
                 onChange={handleChange}
                 required
-                rows="4" 
-                className="w-full bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-lg px-4 py-3 text-sm text-slate-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-slate-900 dark:focus:ring-white transition-all resize-none" 
+                rows="6" 
+                className="w-full bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-lg px-4 py-3.5 md:py-3 text-base md:text-sm text-slate-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-slate-900 dark:focus:ring-white transition-all resize-none" 
                 placeholder="Décrivez votre défi technique ou vos objectifs de croissance..."
               ></textarea>
             </div>
@@ -164,15 +164,15 @@ const Contact = () => {
               <button 
                 type="submit"
                 disabled={isSubmitting}
-                className="flex-1 bg-slate-900 dark:bg-white text-white dark:text-black py-3.5 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="flex-1 bg-slate-900 dark:bg-white text-white dark:text-black py-4 md:py-3.5 rounded-lg text-sm md:text-sm font-medium hover:opacity-90 transition-opacity flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {isSubmitting ? 'Envoi en cours...' : 'Envoyer ma demande d\'étude'}
                 <iconify-icon icon="solar:plain-3-linear" width="16" className="text-current"></iconify-icon>
               </button>
               <button 
                 type="button" 
-                onClick={() => window.open('https://whatsapp.com/dl/', '_blank')}
-                className="flex-1 bg-emerald-50 dark:bg-emerald-500/10 border border-emerald-100 dark:border-emerald-500/20 text-emerald-700 dark:text-emerald-400 py-3.5 rounded-lg text-sm font-medium hover:bg-emerald-100 dark:hover:bg-emerald-500/20 transition-colors flex items-center justify-center gap-2"
+                onClick={() => window.open('https://wa.me/2250768249990', '_blank')}
+                className="flex-1 bg-emerald-50 dark:bg-emerald-500/10 border border-emerald-100 dark:border-emerald-500/20 text-emerald-700 dark:text-emerald-400 py-4 md:py-3.5 rounded-lg text-sm font-medium hover:bg-emerald-100 dark:hover:bg-emerald-500/20 transition-colors flex items-center justify-center gap-2"
               >
                 <iconify-icon icon="solar:chat-round-dots-linear" width="16" className="text-current"></iconify-icon>
                 Chat WhatsApp (Réponse sous 2h)
