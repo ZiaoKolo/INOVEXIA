@@ -41,23 +41,27 @@ function HomePage({ darkMode, toggleDarkMode }) {
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
-  const [darkMode, setDarkMode] = useState(false);
+  // Initialize dark mode from localStorage
+  const [darkMode, setDarkMode] = useState(() => {
+    const savedTheme = localStorage.getItem('theme');
+    return savedTheme === 'dark';
+  });
 
   useEffect(() => {
     // Loader logic
     setTimeout(() => {
       setIsLoading(false);
     }, 1200);
+  }, []);
 
-    // Check dark mode preference - default to light mode
-    const isDark = localStorage.getItem('theme') === 'dark';
-    setDarkMode(isDark);
-    if (isDark) {
+  useEffect(() => {
+    // Apply dark mode class to document
+    if (darkMode) {
       document.documentElement.classList.add('dark');
     } else {
       document.documentElement.classList.remove('dark');
     }
-  }, []);
+  }, [darkMode]);
 
   const toggleDarkMode = () => {
     const newDarkMode = !darkMode;
