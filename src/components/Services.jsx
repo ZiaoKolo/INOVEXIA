@@ -1,3 +1,5 @@
+import ScrollReveal from './ScrollReveal';
+
 const Services = () => {
   const services = [
     {
@@ -26,17 +28,19 @@ const Services = () => {
     <section id="services" className="pt-32 pb-20 md:py-24 px-4 md:px-6 border-t border-slate-200 dark:border-white/5 bg-white dark:bg-dark">
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 md:mb-16 gap-4 md:gap-6">
+          <ScrollReveal animation="fade-right">
           <div>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-medium tracking-tight text-slate-900 dark:text-white mb-3 md:mb-4">Nos Piliers de Transformation Digitale</h2>
             <p className="text-sm md:text-base text-slate-600 dark:text-slate-400 max-w-md">Une expertise technique de pointe conçue pour scaler dès le premier jour.</p>
           </div>
+          </ScrollReveal>
           <div className="hidden md:block h-px flex-1 bg-slate-200 dark:bg-slate-800 ml-12 mb-2"></div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 relative z-10">
           {services.map((service, index) => (
+            <ScrollReveal key={index} animation="fade-up" delay={index * 100}>
             <div 
-              key={index}
               className={`flex flex-col py-10 relative group ${
                 index % 2 === 0 ? 'lg:border-r' : ''
               } ${
@@ -66,6 +70,7 @@ const Services = () => {
                 {service.description}
               </p>
             </div>
+            </ScrollReveal>
           ))}
         </div>
       </div>

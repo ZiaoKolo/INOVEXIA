@@ -1,5 +1,6 @@
 import { cn } from '../utils/cn';
 import { Marquee } from './Marquee';
+import ScrollReveal from './ScrollReveal';
 
 const testimonials = [
   {
@@ -83,6 +84,7 @@ const Testimonials = () => {
   return (
     <section id="testimonials" className="py-24 px-6 border-t border-slate-200 dark:border-white/5 bg-white dark:bg-dark overflow-hidden">
       <div className="max-w-7xl mx-auto">
+        <ScrollReveal animation="fade-up">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-medium tracking-tight text-slate-900 dark:text-white mb-4">
             Ce que disent nos partenaires
@@ -91,6 +93,7 @@ const Testimonials = () => {
             La réussite de nos clients est notre meilleure publicité.
           </p>
         </div>
+        </ScrollReveal>
 
         <div className="relative flex w-full flex-col items-center justify-center">
           <Marquee pauseOnHover className="[--duration:30s] mb-4">

@@ -1,4 +1,5 @@
 import ProjectCard from './ProjectCard';
+import ScrollReveal from './ScrollReveal';
 
 
 const projectsData = [

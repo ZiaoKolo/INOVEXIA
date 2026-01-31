@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import emailjs from '@emailjs/browser';
+import ScrollReveal from './ScrollReveal';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -85,11 +86,14 @@ const Contact = () => {
   return (
     <section id="contact" className="py-16 md:py-24 px-4 md:px-6 border-t border-slate-200 dark:border-white/5 relative bg-white dark:bg-dark">
       <div className="max-w-4xl mx-auto">
+        <ScrollReveal animation="fade-up">
         <div className="text-center mb-8 md:mb-12">
           <h2 className="text-2xl sm:text-3xl md:text-3xl font-medium tracking-tight text-slate-900 dark:text-white mb-3 md:mb-4">Construisons votre futur technologique aujourd'hui</h2>
           <p className="text-sm md:text-base text-slate-500 dark:text-slate-400">Contactez nos experts pour une consultation gratuite ou planifiez votre audit SaaS.</p>
         </div>
+        </ScrollReveal>
 
+        <ScrollReveal animation="zoom-in" delay={100}>
         <div className="bg-slate-50 dark:bg-card p-8 md:p-12 rounded-3xl border border-slate-200 dark:border-white/10">
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -180,6 +184,7 @@ const Contact = () => {
             </div>
           </form>
         </div>
+        </ScrollReveal>
       </div>
     </section>
   );
