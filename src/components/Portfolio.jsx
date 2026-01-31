@@ -136,7 +136,7 @@ const Portfolio = () => {
   return (
     <section id="portfolio" className="py-16 md:py-24 px-4 md:px-6 border-t border-slate-200 dark:border-white/5 bg-white dark:bg-dark">
       <div className="max-w-7xl mx-auto">
-        
+        <ScrollReveal animation="fade-up">
           <div className="mb-8 md:mb-12">
             <h2 className="text-2xl sm:text-3xl md:text-3xl font-medium tracking-tight text-slate-900 dark:text-white mb-3 md:mb-4">
               Des Réussites Tangibles en Afrique
@@ -145,16 +145,14 @@ const Portfolio = () => {
               Découvrez comment nos solutions impactent l'économie réelle.
             </p>
           </div>
-        
+        </ScrollReveal>
 
         {/* Grid Layout */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto">
-          {projectsData.map((project) => (
-            
-              <div className="animate-fade-in">
-                <ProjectCard project={project} />
-              </div>
-            
+          {projectsData.map((project, index) => (
+            <ScrollReveal key={project.id} animation="fade-up" delay={index * 100}>
+              <ProjectCard project={project} />
+            </ScrollReveal>
           ))}
         </div>
       </div>
