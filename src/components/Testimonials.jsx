@@ -82,17 +82,17 @@ const TestimonialCard = ({ img, name, role, body }) => {
 
 const Testimonials = () => {
   return (
-    <section id="testimonials" className="py-24 px-6 border-t border-slate-200 dark:border-white/5 bg-white dark:bg-dark overflow-hidden">
-      <div className="max-w-7xl mx-auto">
+    <section id="testimonials" className="py-16 md:py-24 px-4 md:px-6 border-t border-slate-200 dark:border-white/5 bg-white dark:bg-dark">
+      <div className="max-w-7xl mx-auto overflow-hidden">
         <ScrollReveal animation="fade-up">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl font-medium tracking-tight text-slate-900 dark:text-white mb-4">
-            Ce que disent nos partenaires
-          </h2>
-          <p className="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-            La réussite de nos clients est notre meilleure publicité.
-          </p>
-        </div>
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-3xl font-medium tracking-tight text-slate-900 dark:text-white mb-3 md:mb-4">
+              Ce que disent nos partenaires
+            </h2>
+            <p className="text-sm md:text-base text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+              La réussite de nos clients est notre meilleure publicité.
+            </p>
+          </div>
         </ScrollReveal>
 
         <div className="relative flex w-full flex-col items-center justify-center">
