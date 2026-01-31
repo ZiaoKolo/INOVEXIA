@@ -18,10 +18,13 @@ import Privacy from './components/Privacy';
 import Terms from './components/Terms';
 import CookiePolicy from './components/CookiePolicy';
 import NotFound from './components/NotFound';
+import ScrollToTop from './components/ScrollToTop';
+import ScrollProgressBar from './components/ScrollProgressBar';
 
 function HomePage({ darkMode, toggleDarkMode }) {
   return (
     <>
+      <ScrollProgressBar />
       <Navigation darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       <Hero />
       <Dashboard />
@@ -31,6 +34,7 @@ function HomePage({ darkMode, toggleDarkMode }) {
       <Testimonials />
       <Contact />
       <Footer />
+      <ScrollToTop />
     </>
   );
 }
@@ -72,6 +76,7 @@ function App() {
     <Router>
       <div className="bg-slate-50 text-slate-900 dark:bg-dark dark:text-slate-100 transition-colors duration-300 antialiased">
         <Loader isLoading={isLoading} />
+        <ScrollProgressBar />
         <Routes>
           <Route path="/" element={<HomePage darkMode={darkMode} toggleDarkMode={toggleDarkMode} />} />
           <Route path="/blog" element={
@@ -79,6 +84,7 @@ function App() {
               <Navigation darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
               <Blog />
               <Footer />
+              <ScrollToTop />
             </>
           } />
           <Route path="/blog/:id" element={
@@ -86,6 +92,7 @@ function App() {
               <Navigation darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
               <BlogPost />
               <Footer />
+              <ScrollToTop />
             </>
           } />
           <Route path="/about" element={
@@ -93,6 +100,7 @@ function App() {
               <Navigation darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
               <About />
               <Footer />
+              <ScrollToTop />
             </>
           } />
           <Route path="/privacy" element={
@@ -100,6 +108,7 @@ function App() {
               <Navigation darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
               <Privacy />
               <Footer />
+              <ScrollToTop />
             </>
           } />
           <Route path="/terms" element={
@@ -107,6 +116,7 @@ function App() {
               <Navigation darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
               <Terms />
               <Footer />
+              <ScrollToTop />
             </>
           } />
           <Route path="/cookies" element={
@@ -114,6 +124,7 @@ function App() {
               <Navigation darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
               <CookiePolicy />
               <Footer />
+              <ScrollToTop />
             </>
           } />
           <Route path="*" element={<NotFound />} />
