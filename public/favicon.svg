@@ -10,6 +10,6 @@
         stroke-linecap="round"
         stroke-linejoin="round"/>
 
-  <!-- Texte ZOTECS -->
-  <text x="50" y="85" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="white" text-anchor="middle" letter-spacing="1.2">ZOTECS</text>
+  <!-- Texte ZOTECS agrandi -->
+  <text x="50" y="85" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="white" text-anchor="middle" letter-spacing="1.2">ZOTECS</text>
 </svg>
