@@ -11,5 +11,5 @@
         stroke-linejoin="round"/>
 
   <!-- Texte ZOTECS agrandi -->
-  <text x="50" y="85" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="white" text-anchor="middle" letter-spacing="1.2">ZOTECS</text>
+  <text x="50" y="85" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="white" text-anchor="middle" letter-spacing="1.2">ZOTECS</text>
 </svg>
