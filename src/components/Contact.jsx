@@ -175,7 +175,7 @@ const Contact = () => {
               </button>
               <button 
                 type="button" 
-                onClick={() => window.open('https://wa.me/2250768249990', '_blank')}
+                onClick={() => window.open('https://wa.me/2250700971195', '_blank')}
                 className="flex-1 bg-emerald-50 dark:bg-emerald-500/10 border border-emerald-100 dark:border-emerald-500/20 text-emerald-700 dark:text-emerald-400 py-4 md:py-3.5 rounded-lg text-sm font-medium hover:bg-emerald-100 dark:hover:bg-emerald-500/20 transition-colors flex items-center justify-center gap-2"
               >
                 <iconify-icon icon="solar:chat-round-dots-linear" width="16" className="text-current"></iconify-icon>
